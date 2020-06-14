@@ -3,8 +3,6 @@
 #include <fstream>
 #include <iostream>
 
-///Constructors / operator= / operator<< :
-///
 Location::Location()
 {
     section = "Unknown";
@@ -34,7 +32,7 @@ Location &Location::operator=(const Location &other)
         shelf = other.shelf;
         number = other.number;
     }
-       return *this;
+    return *this;
 }
 
 std::ostream &operator<<(std::ostream &out, const Location &location)
@@ -42,12 +40,9 @@ std::ostream &operator<<(std::ostream &out, const Location &location)
     out << " > section: " << location.section << std::endl
         << " > shelf: " << location.shelf << std::endl
         << " > number: " << location.number << std::endl;
-	return out;
+    return out;
 }
-///
 
-////Set and Get functions:
-////
 void Location::set_section(String section)
 {
     this->section = section;
@@ -77,9 +72,3 @@ short Location::get_number() const
 {
     return number;
 }
-////
-
-/////Location functions:
-/////
-
-/////

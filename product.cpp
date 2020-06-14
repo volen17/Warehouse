@@ -3,8 +3,6 @@
 #include "date.hpp"
 #include <iostream>
 
-///Constructors / operator= / operator<< :
-///
 Product::Product()
 {
     name = "Unknown";
@@ -74,10 +72,7 @@ std::ostream &operator<<(std::ostream &out, const Product &product)
         << "Comment: " << product.comment << std::endl;
     return out;
 }
-///
 
-////Set and Get functions:
-////
 void Product::set_name(String name)
 {
     this->name = name;
@@ -167,8 +162,3 @@ double Product::get_all_quantity() const
 {
     return all_quantity;
 }
-////
-
-/////Product functions:
-/////
-/////

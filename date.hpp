@@ -24,7 +24,6 @@ public:
     bool operator<=(const Date &) const;
     bool operator>(const Date &) const;
     bool operator>=(const Date &) const;
-
     bool isLeap();
     bool isValid();
 

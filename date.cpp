@@ -2,8 +2,6 @@
 #include <iostream>
 #include <cstring>
 
-///Contructors / operator= / operator>> / operator<< /operator<= / operator> / operator>=:
-///
 Date::Date()
 {
     year = 0;
@@ -216,10 +214,7 @@ bool Date::operator>=(const Date &date) const
         return false;
     }
 }
-///
 
-////Set and Get functions:
-////
 void Date::set_year(short year)
 {
     this->year = year;
@@ -249,10 +244,7 @@ short Date::get_day() const
 {
     return day;
 }
-////
 
-/////Date functions:
-/////
 bool Date::isLeap()
 {
     if (year % 4 != 0)
@@ -304,4 +296,3 @@ bool Date::isValid()
     }
     return true;
 }
-/////

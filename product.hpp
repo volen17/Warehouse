@@ -43,4 +43,4 @@ private:
     Location location;
     String comment;
     double all_quantity;
-    };
+};
